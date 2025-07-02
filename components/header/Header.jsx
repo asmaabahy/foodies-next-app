@@ -1,8 +1,9 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import logo from "../assets/logo.png";
+import logo from "@/assets/logo.png";
 import classes from "./Header.module.css";
+import NavLink from "./NavLink";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -14,8 +15,8 @@ function Header() {
       <nav className={classes.nav}>
         <ul>
           <li>
-            <Link href={"/meals"}>Meals</Link>
-            <Link href={"/community"}>Community</Link>
+            <NavLink link={"/meals"}>Browse Meals</NavLink>
+            <NavLink link={"/community"}>Foodies Community</NavLink>
           </li>
         </ul>
       </nav>
